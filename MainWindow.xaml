@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AirQualify"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title=" AirQuality "
+        Background="#F2F1F6"
+        Height="450" Width="700"
+        ResizeMode="NoResize" Icon="C:\Users\Fast-company\source\repos\ASP\AirQualify\icons\3509012.png"
+             
+        >
+ 
     <Grid>
-        <Label Content="Hello world" FontSize="45" Width="240" Height="100"/>
+       
     </Grid>
 </Window>
