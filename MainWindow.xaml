@@ -8,11 +8,11 @@
         Title=" AirQuality "
         Background="#F2F1F6"
         Height="450" Width="700"
-        ResizeMode="NoResize" Icon="C:\Users\Fast-company\source\repos\ASP\AirQualify\icons\3509012.png"
-             
-        >
+        ResizeMode="NoResize" Icon=".\icons\3509012.png"
+             >
  
     <Grid>
        
+        
     </Grid>
 </Window>
