@@ -7,12 +7,21 @@
         mc:Ignorable="d"
         Title=" AirQuality "
         Background="#F2F1F6"
-        Height="450" Width="700"
+        Height="600" Width="850"
         ResizeMode="NoResize" Icon=".\icons\3509012.png"
              >
  
     <Grid>
-       
         
+        <Border CornerRadius="5" BorderBrush="#000" BorderThickness="1"
+        VerticalAlignment="Center" UseLayoutRounding="True" Height="50" Width="280">
+            <TextBox BorderThickness="0" Background="Transparent"
+                     x:Name="SearchBox"
+                     Height="50"  Width="280"
+                     Foreground="#a6a39a"
+                      FontSize="20" TextAlignment="Center"/>
+            
+        </Border>
+        <Button Height="50" Width="50" Margin="504,192,146,192" Content="Search" Click="SearchButton"/>
     </Grid>
 </Window>
