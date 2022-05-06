@@ -14,14 +14,17 @@
     <Grid>
         
         <Border CornerRadius="5" BorderBrush="#000" BorderThickness="1"
-        VerticalAlignment="Center" UseLayoutRounding="True" Height="50" Width="280">
+        VerticalAlignment="Center" UseLayoutRounding="True" Height="45" Width="280">
             <TextBox BorderThickness="0" Background="Transparent"
                      x:Name="SearchBox"
-                     Height="50"  Width="280"
+                     Height="45"  Width="280"
                      Foreground="#a6a39a"
-                      FontSize="20" TextAlignment="Center"/>
+                      FontSize="30" TextAlignment="Center"
+                    ToolTip="Введите название города"
+                     />
             
         </Border>
-        <Button Height="50" Width="50" Margin="504,192,146,192" Content="Search" Click="SearchButton"/>
+        <Button Height="50" Width="50" Margin="504,192,146,192" Content="Search" Click="SearchButton"
+                ToolTip="Произошел поиск"/>
     </Grid>
 </Window>
