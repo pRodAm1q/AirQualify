@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using AirQualify.Views;
+
 
 namespace AirQualify
 {
@@ -23,11 +23,13 @@ namespace AirQualify
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Content = new MainPage();
+          
         }
 
-
-
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
 

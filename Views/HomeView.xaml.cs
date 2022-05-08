@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace AirQualify.Views
 {
     /// <summary>
-    /// Логика взаимодействия для Page2.xaml
+    /// Логика взаимодействия для MainView.xaml
     /// </summary>
-    public partial class Page2 : Page
+    public partial class HomeView : UserControl
     {
-        public Page2()
+        public HomeView()
         {
             InitializeComponent();
-        }
-
-        private void BackButton_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.GoBack();
         }
     }
 }

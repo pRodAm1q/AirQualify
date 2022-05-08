@@ -11,12 +11,18 @@
     <None Remove="3509012.png" />
     <None Remove="air-quality-icon-12.jpg" />
     <None Remove="noun-co2-cloud-4460467.png" />
+    <None Remove="power.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="icons\3509012.png" />
     <Resource Include="icons\air-quality-icon-12.jpg" />
     <Resource Include="icons\noun-co2-cloud-4460467.png" />
+    <Resource Include="power.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
   </ItemGroup>
 
 </Project>
