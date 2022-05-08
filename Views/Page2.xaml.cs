@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,21 +12,22 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using AirQualify.Views;
 
-namespace AirQualify
+namespace AirQualify.Views
 {
-
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Логика взаимодействия для Page2.xaml
+    /// </summary>
+    public partial class Page2 : Page
     {
-        public MainWindow()
+        public Page2()
         {
             InitializeComponent();
-            MainFrame.Content = new MainPage();
         }
 
-
-
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
+        }
     }
 }
-
