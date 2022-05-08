@@ -85,7 +85,7 @@
                     <!--Правее названия-->
                     <Button Height="25"
                             Width="25"
-                            Margin="625,0,0,0"
+                            Margin="615,0,10,0"
                             BorderBrush="Black" Click="Close_Click"
                           >
                         <Button.Background>
