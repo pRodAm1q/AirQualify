@@ -7,13 +7,17 @@ using System.Threading.Tasks;
 
 namespace AirQualify.ViewModel
 {
-    class MainViewModel : ObservableObect
+    class MainViewModel : ObservableObject
     {
 
 
+        public RelayCommand HomeViewCommand { get; set; }
+        public RelayCommand AboutAQIViewCommand { get; set; }
+        public RelayCommand SettingsViewCommand { get; set; }
+
         public HomeViewModel HomeVM { get; set; }
-
-
+        public AboutAQIViewModel AboutAQIVM { get; set; }
+        public SettingsViewModel SettingsVM { get; set; }
 
         private object _currentView;
 
@@ -28,7 +32,26 @@ namespace AirQualify.ViewModel
         public MainViewModel()
         {
             HomeVM = new HomeViewModel();
+            AboutAQIVM = new AboutAQIViewModel();
+            SettingsVM = new SettingsViewModel();
             CurrentView = HomeVM;
+
+
+            HomeViewCommand = new RelayCommand(o => 
+            {
+                CurrentView = HomeVM;
+
+            });
+
+            AboutAQIViewCommand = new RelayCommand(o => 
+            {
+                CurrentView = AboutAQIVM;
+            });
+
+            SettingsViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = SettingsVM;
+            });
         }
     }
 }

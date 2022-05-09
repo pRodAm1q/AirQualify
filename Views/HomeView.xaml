@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:AirQualify.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="630">
+   
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="53*"/>
@@ -14,16 +15,22 @@
         <StackPanel Orientation="Horizontal">
         <TextBox Height="40"
                    Width="450"
-                    Margin="70,1,0,0"
-                 Style="{StaticResource ModernSearchBox}"/>
+                    Margin="65,1,0,0"
+                 Style="{StaticResource ModernSearchBox}"
+                 SpellCheck.IsEnabled="True" Language="ru-en" x:Name="searchBox"/>
             <Button x:Name="SearchButton"
                     Height="40"
                     Width="40"
-                    Content="Поиск"
-                    Background="Transparent"
+                    BorderThickness="0"
                     Foreground="White"
                     Margin="5"
-                    />
+                    Background="Transparent"
+                    Content="Поиск"
+                    Style="{StaticResource ModernSearchButton}" Click="SearchButton_Click">
+              
+
+            </Button>
         </StackPanel>
     </Grid>
+    
 </UserControl>

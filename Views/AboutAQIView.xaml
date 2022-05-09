@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="AirQualify.Views.AboutAQIView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AirQualify.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="630"
+             Background="Transparent">
+    <Grid Height="450" Width="630">
+        <StackPanel >
+            <TextBlock FontSize="30" Foreground="White" HorizontalAlignment="Center" Margin="10"
+                     FontWeight="Bold"  >
+                Что такое AQI?
+            </TextBlock>
+            <TextBlock
+                FontSize="14"
+                Foreground="White" TextAlignment="Center">
+AQI – air quality index – индекс качества воздуха, эта аббревиатура используется
+                <LineBreak/>
+                во всех мировых экологический государственных органах для информирования
+                <LineBreak/>
+                
+                общественности про уровень загрязнения воздуха а так же прогнозирование 
+<LineBreak/>
+            
+                загрязнение воздуха.
+                <LineBreak/>
+                <LineBreak/>
+            </TextBlock>
+            <TextBlock FontSize="16" Text="Шкала индекса качества воздуха" Foreground="White" 
+                       FontWeight="Bold" TextAlignment="Center"/>
+
+
+            <Border Height="230" Width="400" BorderThickness="0" Margin="0,10,0,0">
+                <Border.Background>
+                    <ImageBrush ImageSource="/Images/indexAQI.jpg"/>
+                </Border.Background>
+            </Border>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -20,10 +20,21 @@ namespace AirQualify
 
     public partial class MainWindow : Window
     {
+
+        public static MainWindow? Window;
         public MainWindow()
         {
             InitializeComponent();
-          
+            Window = this;
+
+        }
+
+        private void Drag(object sender, RoutedEventArgs e)
+        {
+            if(Mouse.LeftButton == MouseButtonState.Pressed)
+            {
+                Window.DragMove();
+            }
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)

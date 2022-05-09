@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModel="clr-namespace:AirQualify.ViewModel"
         xmlns:icons="A"
-        xmlns:local="clr-namespace:AirQualify"
         mc:Ignorable="d"
         Title=" AirQuality"
       WindowStyle="None"  
@@ -13,14 +12,14 @@
         ResizeMode="NoResize" Icon=".\icons\3509012.png"
         WindowStartupLocation="CenterScreen"
        Background="Transparent"
-        AllowsTransparency="True">
+        AllowsTransparency="True" MouseDown="Drag">
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
     <Border Background="#272537">
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200 "/>
+                <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>
 
             </Grid.ColumnDefinitions>
@@ -50,13 +49,16 @@
                                      Foreground="White"
                                      Height="50"
                                      FontSize="16"
-                                     Style="{StaticResource MenuButtonTheme}"/>
+                                     Style="{StaticResource MenuButtonTheme}"
+                                     IsChecked="True"
+                                     Command="{Binding HomeViewCommand}"/>
                         <!--Об AQI-->
                         <RadioButton Content="Об AQI"
                                      Foreground="White"
                                      Height="50"
                                      FontSize="16"
-                                     Style="{StaticResource MenuButtonTheme}"/>
+                                     Style="{StaticResource MenuButtonTheme}"
+                                     Command="{Binding AboutAQIViewCommand}"/>
                         <!--О проетке-->
                         <RadioButton Content="О проекте"
                                      Foreground="White"
@@ -68,7 +70,8 @@
                                      Foreground="White"
                                      Height="50"
                                      FontSize="16"
-                                     Style="{StaticResource MenuButtonTheme}"/>
+                                     Style="{StaticResource MenuButtonTheme}"
+                                     Command="{Binding SettingsViewCommand}"/>
                     </StackPanel>
                 </Grid>
             </Grid>
@@ -85,7 +88,7 @@
                     <!--Правее названия-->
                     <Button Height="25"
                             Width="25"
-                            Margin="615,0,10,0"
+                            Margin="615,0,5,0"
                             BorderBrush="Black" Click="Close_Click"
                           >
                         <Button.Background>

@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AirQualify.Core;
+using System;
+
+using System.Net.Http;
 
 namespace AirQualify.ViewModel
 {
-    class HomeViewModel
+    public class HomeViewModel 
     {
+       
     }
 }
