@@ -14,10 +14,12 @@ namespace AirQualify.ViewModel
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand AboutAQIViewCommand { get; set; }
         public RelayCommand SettingsViewCommand { get; set; }
+        public RelayCommand ABoutProjectViewCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
         public AboutAQIViewModel AboutAQIVM { get; set; }
         public SettingsViewModel SettingsVM { get; set; }
+        public AboutProjectViewModel AboutProjectVM { get; set; }
 
         private object _currentView;
 
@@ -34,6 +36,7 @@ namespace AirQualify.ViewModel
             HomeVM = new HomeViewModel();
             AboutAQIVM = new AboutAQIViewModel();
             SettingsVM = new SettingsViewModel();
+            AboutProjectVM = new AboutProjectViewModel();
             CurrentView = HomeVM;
 
 
@@ -51,6 +54,10 @@ namespace AirQualify.ViewModel
             SettingsViewCommand = new RelayCommand(o =>
             {
                 CurrentView = SettingsVM;
+            });
+            ABoutProjectViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = AboutProjectVM;
             });
         }
     }

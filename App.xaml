@@ -11,6 +11,7 @@
                 <ResourceDictionary Source="Themes/MenuButtonTheme.xaml"/>
                 <ResourceDictionary Source="Themes/SearchBoxTheme.xaml"/>
                 <ResourceDictionary Source="Themes/SearchButtonTheme.xaml"/>
+                <ResourceDictionary Source="Themes/GHButtonTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
@@ -24,7 +25,9 @@
             <DataTemplate DataType="{x:Type viewModel:SettingsViewModel}">
                 <views:SettingsView/>
             </DataTemplate>
-            
+            <DataTemplate DataType="{x:Type viewModel:AboutProjectViewModel}">
+                <views:AboutProject/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

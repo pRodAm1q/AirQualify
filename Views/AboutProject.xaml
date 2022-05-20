@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="630">
     <Grid>
-        <StackPanel>
+        <StackPanel Margin="10,40,0,0">
         <TextBlock FontSize="30" Foreground="White" HorizontalAlignment="Center" Margin="10"
                      FontWeight="Bold"  >
  О проекте
@@ -92,21 +92,8 @@
                        
                     </Border>
                     <Button Height="100" Width="200" Background="Transparent" BorderThickness="0"
-                            >  <!--link-->
-                        <Border Height="100" Width="200">
-                            <Border.Background>
-                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                    <GradientStop Color="#8f20f7" Offset="0.0"/>
-                                    <GradientStop Color="#7309d6" Offset="1"/>
-                                </LinearGradientBrush>
-                            </Border.Background>
-                            <Border.Clip>
-                                <RectangleGeometry RadiusX="30" RadiusY="35" Rect="0,0,200,100"/>
-                            </Border.Clip>
-                            <TextBlock FontSize="22" Foreground="White" Text="View on GitHub" HorizontalAlignment="Center" VerticalAlignment="Center">
-                                <Hyperlink NavigateUri=""/>
-                            </TextBlock>
-                        </Border>
+                            Style="{StaticResource GHButton}" Click="LinkClick" ToolTip="Переход на страницу в GitHub">  <!--link-->
+                       
                     </Button>
                 </StackPanel>
             </StackPanel>
