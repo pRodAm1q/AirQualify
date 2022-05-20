@@ -17,12 +17,11 @@ namespace AirQualify.Views
             InitializeComponent();
         }
 
-        private async void SearchButton_Click(object sender, RoutedEventArgs e)
+        public async void SearchButton_Click(object sender, RoutedEventArgs e)
         {
-            
 
 
-            
         }
     }
 }
+

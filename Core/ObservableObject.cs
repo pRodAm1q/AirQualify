@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace AirQualify.Core
 {
-    class ObservableObject : INotifyPropertyChanged
+    public class ObservableObject : INotifyPropertyChanged //18.05 add "public"
     {
         public event PropertyChangedEventHandler? PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string? name = null)

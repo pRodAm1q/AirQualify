@@ -3,7 +3,7 @@ using System.Windows.Input;
 
 namespace AirQualify.Core
 {
-    class RelayCommand : ICommand
+    public class RelayCommand : ICommand   //18.05 add "public"
     {
         private Action<object>? _execute;
         private Func<object, bool>? _canExecute;

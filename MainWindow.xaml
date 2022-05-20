@@ -16,6 +16,9 @@
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
+    
+    
+    
     <Border Background="#272537">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -42,6 +45,8 @@
                            />
                 </Grid>
                 <!-- Под названием-->
+               
+                
                 <Grid Grid.Row="1">
                     <StackPanel Margin="0,140,0,0">
                         <!--Главная-->

@@ -5,7 +5,7 @@ using System.Net.Http;
 
 namespace AirQualify.ViewModel
 {
-    public class HomeViewModel 
+    public class HomeViewModel : ObservableObject
     {
        
     }
