@@ -6,6 +6,9 @@
              xmlns:local="clr-namespace:AirQualify.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="630">
+    
+    
+    
     <Grid>
         <StackPanel Margin="10,40,0,0">
         <TextBlock FontSize="30" Foreground="White" HorizontalAlignment="Center" Margin="10"

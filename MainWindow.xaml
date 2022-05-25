@@ -17,8 +17,6 @@
         <viewModel:MainViewModel/>
     </Window.DataContext>
     
-    
-    
     <Border Background="#272537">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -70,7 +68,7 @@
                                      Height="50"
                                      FontSize="16"
                                      Style="{StaticResource MenuButtonTheme}"
-                                     Command="{Binding ABoutProjectViewCommand}"/>
+                                     Command="{Binding AboutProjectViewCommand}"/>
                         <!--Настройки-->
                         <RadioButton Content="Настройки"
                                      Foreground="White"
