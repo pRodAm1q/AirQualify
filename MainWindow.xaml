@@ -16,7 +16,7 @@
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
-    
+
     <Border Background="#272537">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -43,8 +43,8 @@
                            />
                 </Grid>
                 <!-- Под названием-->
-               
-                
+
+
                 <Grid Grid.Row="1">
                     <StackPanel Margin="0,140,0,0">
                         <!--Главная-->
@@ -92,12 +92,15 @@
                     <!--Правее названия-->
                     <Button Height="25"
                             Width="25"
-                            Margin="615,0,5,0"
+                            Margin="618,0,8,0"
                             BorderBrush="Black" Click="Close_Click"
-                          >
-                        <Button.Background>
+                          Command="{Binding CloseApp}" VerticalAlignment="Top"
+                            Style="{StaticResource CloseButton}"
+                            ToolTip="Close App"
+                            >
+                        <!--<Button.Background>
                             <ImageBrush ImageSource="/power.png"/>
-                        </Button.Background>
+                        </Button.Background>-->
 
                     </Button>
                 </Grid>

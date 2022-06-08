@@ -12,8 +12,9 @@
                 <ResourceDictionary Source="Themes/SearchBoxTheme.xaml"/>
                 <ResourceDictionary Source="Themes/SearchButtonTheme.xaml"/>
                 <ResourceDictionary Source="Themes/GHButtonTheme.xaml"/>
+                <ResourceDictionary Source="Themes/CloseAppButtonTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-            
+
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
                 <views:HomeView/>
             </DataTemplate>

@@ -7,9 +7,7 @@ using Newtonsoft.Json.Linq;
 
 namespace AirQualify.Views
 {
-    /// <summary>
-    /// Логика взаимодействия для MainView.xaml
-    /// </summary>
+  
     public partial class HomeView : UserControl
     {
         public HomeView()
@@ -18,6 +16,13 @@ namespace AirQualify.Views
         }
 
     
+       
+        
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
 

@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AirQualify.Views"
+             xmlns:serv="clr-namespace:AirQualify.Services"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="630">
    
@@ -17,7 +18,8 @@
                    Width="450"
                     Margin="65,1,0,0"
                  Style="{StaticResource ModernSearchBox}"
-                 SpellCheck.IsEnabled="True" Language="ru-en" x:Name="searchBox"/>
+                 SpellCheck.IsEnabled="True" Language="ru-en" x:Name="searchBox"
+                 />
             <Button x:Name="SearchButton"
                     Height="40"
                     Width="40"
@@ -26,7 +28,7 @@
                     Margin="5"
                     Background="Transparent"
                     Content="Поиск"
-                    Style="{StaticResource ModernSearchButton}">
+                    Style="{StaticResource ModernSearchButton}" Click="SearchButton_Click">
               
 
             </Button>

@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace AirQualify.Model
 {
-     public static class HomeModel
+     public class HomeModel
     { 
-        //public static object ObjectName { get; set; }
-        //public static object PM25Model { get; set; }
-        //public static object o3Model { get; set; }
-        //public static object no2Model { get; set; }
-        //public static object WindModel { get; set; }
-        //public static object coModel { get; set; }
+
+
+        //public string? Title { get; set; }
+        //public string? PM25Model { get; set; }
+        //public string? o3Model { get; set; }
+        //public string? no2Model { get; set; }
+        //public string? WindModel { get; set; }
+        //public string? CoModel { get; set; }
     }
 }
