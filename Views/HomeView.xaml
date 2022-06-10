@@ -44,8 +44,9 @@
         <TextBlock
             Grid.Row="1"
             FontSize="20"
-            TextAlignment="Center"
+            TextAlignment="Left"
             Foreground="White"
+           Margin="110,0,0,50"
             Text="{Binding SearchResult, Mode=OneWay}"
           
             Width="300" Height="200"
