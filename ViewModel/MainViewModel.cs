@@ -1,5 +1,6 @@
 ﻿using AirQualify.Core;
 using System.Windows;
+using System.Windows.Input;
 
 namespace AirQualify.ViewModel
 {
@@ -18,13 +19,13 @@ namespace AirQualify.ViewModel
             Application.Current.Shutdown();
         }
         #endregion
-        
+
         #region Navigate commands
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand AboutAQIViewCommand { get; set; }
         public RelayCommand SettingsViewCommand { get; set; }
         public RelayCommand AboutProjectViewCommand { get; set; }
-        
+
         public HomeViewModel HomeVM { get; set; }
         public AboutAQIViewModel AboutAQIVM { get; set; }
         public SettingsViewModel SettingsVM { get; set; }
@@ -35,7 +36,9 @@ namespace AirQualify.ViewModel
         public object? CurrentView
         {
             get { return _currentView; }
-            set { _currentView = value;
+            set
+            {
+                _currentView = value;
                 OnPropertyChanged();
             }
         }
@@ -51,12 +54,12 @@ namespace AirQualify.ViewModel
             SettingsVM = new SettingsViewModel();
             AboutProjectVM = new AboutProjectViewModel();
             CurrentView = HomeVM;
-            HomeViewCommand = new RelayCommand(o => 
+            HomeViewCommand = new RelayCommand(o =>
             {
                 CurrentView = HomeVM;
             });
 
-            AboutAQIViewCommand = new RelayCommand(o => 
+            AboutAQIViewCommand = new RelayCommand(o =>
             {
                 CurrentView = AboutAQIVM;
             });

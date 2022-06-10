@@ -4,11 +4,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AirQualify.Views"
-             xmlns:serv="clr-namespace:AirQualify.Services"
+             xmlns:serv="clr-namespace:AirQualify.ViewModel"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="630">
-   
+             d:DesignHeight="450" d:DesignWidth="630"
+             >
+
     <Grid>
+        <Grid.DataContext>
+            <serv:HomeViewModel/>
+        </Grid.DataContext>
         <Grid.RowDefinitions>
             <RowDefinition Height="53*"/>
             <RowDefinition Height="97*"/>
@@ -18,8 +22,12 @@
                    Width="450"
                     Margin="65,1,0,0"
                  Style="{StaticResource ModernSearchBox}"
-                 SpellCheck.IsEnabled="True" Language="ru-en" x:Name="searchBox"
+                 x:Name="searchBox"
+                 Text="{Binding SearchValue, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                 
                  />
+            <!--Style="{StaticResource ModernSearchBox}"-->
+            <!--Text="{Binding SearchValue, UpdateSourceTrigger=PropertyChanged}"-->
             <Button x:Name="SearchButton"
                     Height="40"
                     Width="40"
@@ -28,11 +36,21 @@
                     Margin="5"
                     Background="Transparent"
                     Content="Поиск"
-                    Style="{StaticResource ModernSearchButton}" Click="SearchButton_Click">
-              
-
+                    Style="{StaticResource ModernSearchButton}" Click="SearchButton_Click"
+                    Command="{Binding GetAQi, Mode=OneWay}"
+                    >
             </Button>
         </StackPanel>
+        <TextBlock
+            Grid.Row="1"
+            FontSize="20"
+            TextAlignment="Center"
+            Foreground="White"
+            Text="{Binding SearchResult, Mode=OneWay}"
+          
+            Width="300" Height="200"
+            />
+
     </Grid>
     
 </UserControl>
